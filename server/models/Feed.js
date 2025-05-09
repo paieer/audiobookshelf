@@ -574,6 +574,25 @@ class Feed extends Model {
         }
       },
       { 'itunes:explicit': !!this.explicit }
+      ,
+      {
+        'itunes:category': [
+          { _attr: { text: 'Leisure' } },
+          { 'itunes:category': { _attr: { text: 'Hobbies' } } }
+        ]
+      },
+      {
+        'itunes:category': [
+          { _attr: { text: 'Health & Fitness' } },
+          { 'itunes:category': { _attr: { text: 'Mental Health' } } }
+        ]
+      },
+      {
+        'itunes:category': [
+          { _attr: { text: 'Arts' } },
+          { 'itunes:category': { _attr: { text: 'Books' } } }
+        ]
+      }
     ]
 
     if (this.description) {
